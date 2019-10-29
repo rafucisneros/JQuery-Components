@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+<body>
+<style>
+    #popUp_header{
+      background: linear-gradient(to right,#1010109e, #a9a5a5); 
+      top: 0; 
+      left:0; 
+      right: 0;
+      position: absolute; 
+      padding: 3px;
+      color: #cac9c9
+    }
+    #popUp{
+      padding:10px;
+      background-color: #ccc9c9; 
+      flex-grow: 1;
+      position: relative; 
+      border: 3px solid #383838;
+      border-radius: 6px;
+    }
+    #popUp_content{
+      margin-top: 25px;
+    }
+    .popUp_content-row{
+      display: flex;
+      justify-content: space-between;
+    }
+</style>
+<div id="popUp">
+    <div id="popUp_header"> 
+      Datos Adicionales Pasajeros
+    </div>
+    <div id="popUp_content">
+      <div class="popUp_content-row">
+        <label>Nombres</label>
+        <input type="text">
+      </div>
+      <div class="popUp_content-row">
+        <label>Apellidos</label>
+        <input type="text">
+      </div>
+      <div class="popUp_content-row">
+        <label for="">Nro de Cédula</label>
+        <input type="text">
+      </div>
+      <div class="popUp_content-row">
+        <label for="">Nacionalidad</label>
+        <select name="" id="" style="flex: 1; margin-left: 11px;">
+          <option value=""></option>  
+        </select>
+      </div>
+      <div class="popUp_content-row">
+        <label for="">
+          Nro Telefono
+        </label>
+        <input type="text">
+      </div>
+      <div class="popUp_content-row">
+        <button id="btn">Procesar</button>
+      </div>
+    </div>
+    <script>
+      $("#btn").on("click", ()=>{alert("click")})
+    </script>
+</div> 
+</body>
+</html>

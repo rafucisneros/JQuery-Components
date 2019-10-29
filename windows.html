@@ -4,23 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Table</title>
-  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <title>Document</title>
   <link rel="stylesheet" href="jquery-ui/jquery-ui-1.12.1/jquery-ui.min.css">
 </head>
-<body>
-  <div id="table">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-  </div>
+  body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .main{
+    background-color: #417f80;
+    height: 100%;
+    width: 100%;
+  }
+</style>
+<body>
   <div class="main">
+    <div id="testcbo"></div>
     <div id="theme" style="width: 18%; z-index: 999999999999999; top: 5px;"></div>
   </div>
-  <br><br><br>
-  <script src="Utils.js"></script>
+  
   <script src="jquery-ui/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
   <script src="jquery-ui/jquery-ui-1.12.1/jquery-ui.min.js"></script>
   <script src="jquery-ui/ThemeSwitchToolLocal.js"></script>
-  <script src="dataTable.js"></script>
+  <script src="Utils.js"></script>
+  <script src="comboBox.js"></script>
+  <script src="windowsController.js"></script>
   <script>
     $("#theme")
 	    .themeswitcher({
@@ -32,10 +48,8 @@
       .draggable({containment: "body"})
       .css("top", "auto")
       .css("left", "auto")
-      .css("bottom", "10px")
-      .css("right", "10px")  
-      .find("a")
-      .css("height", "auto")  
+      .css("bottom", "0")
+      .css("right", "0")
   </script>
 </body>
 </html>

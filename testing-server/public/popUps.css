@@ -1,0 +1,38 @@
+#overlay{
+  top:0; 
+  bottom:0; 
+  right:0; 
+  left:0; 
+  background:rgba(0,0,0,0.6); 
+  position:absolute; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+#popUp_header{
+  background: linear-gradient(to right,#1010109e, #a9a5a5); 
+  top: 0; 
+  left:0; 
+  right: 0;
+  position: absolute; 
+  padding: 3px;
+  color: #cac9c9
+}
+#popUp{
+  display: flex; 
+  flex-direction: column; 
+  padding:10px;
+  background-color: #ccc9c9; 
+  flex-grow: 1;
+  position: relative; 
+  align-items: center;
+  border: 3px solid #383838;
+  border-radius: 6px;
+}
+#popUp_content{
+  margin-top: 25px;
+}
+.popUp_content-row{
+  display: flex;
+  justify-content: space-between;
+}
